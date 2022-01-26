@@ -8,7 +8,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #03989e;
+    background-color: #ffff;
     font-family: 'Oswald', sans-serif;
   }
 
@@ -16,12 +16,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     background-color: white;
   }
 
   .brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
+    font-size: 3rem;
+    margin:1.5rem;
+    text-align: center;
+    align-items: center;
   }
 
 
@@ -37,8 +40,9 @@
 
   .navbar-links li a {
     text-decoration: none;
+    font-size: 1.5rem;
     color:black;
-    padding: 1rem;
+    padding: 1.5rem;
     display: block;
   }
 
@@ -47,18 +51,25 @@
 
 }
 
+header img {
+  width: 100%;
+}
 
+/* CONTACT FORM */
+.contact {
+  background: var(--secondary-color);
+}
 
-
-
-
+.contact h2 {
+  color: var(--primary-color);
+}
 
 
 
 
   /* NAVBAR HOVER */
   .navbar-links li:hover {
-    background-color: red;
+    background-color: #03989e;
   }
   .toggle-button {
     position: absolute;
@@ -74,7 +85,7 @@
   .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: red;
+    background-color: #03989e;
     border-radius: 10px;
   }
 
