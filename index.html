@@ -34,7 +34,7 @@
         <ul>
             <li> <a href="#home">Home</a></li>
             <li> <a href="#shows">Shows</a></li>
-            <li> <a href="#about-us">About us</a></li>
+            <li> <a href="./about-us.html">About us</a></li>
             <li> <a href="#contact-us">Contact us</a></li>
         </ul>
     </div>
@@ -43,64 +43,29 @@
 <!--main section-->
 <main>
   <!--header-->
+
   <header>
     <img src="./assets/img/Untitled design (31).png" alt="LSH banner with logo">
   </header>
+
+
+
+<section class="wrapper">
+<input type="text" class="input" placeholder="what are you looking for?">
+<select class="form-select" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+ <div class="searchbtn"></div>
   
-  <!--POSSIBLE SEARCH BAR-->
-  <form>
-    <fieldset disabled>
-      <legend>Disabled fieldset example</legend>
-      <div class="mb-3">
-        <label for="disabledTextInput" class="form-label">Disabled input</label>
-        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-      </div>
-      <div class="mb-3">
-        <label for="disabledSelect" class="form-label">Disabled select menu</label>
-        <select id="disabledSelect" class="form-select">
-          <option>Disabled select</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-          <label class="form-check-label" for="disabledFieldsetCheck">
-            Can't check this
-          </label>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </fieldset>
-  </form>
-<!--another possible search bar
-
-<div class="row g-2">
-  <div class="col-md">
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
-      <label for="floatingInputGrid">Email address</label>
-    </div>
-  </div>
-  <div class="col-md">
-    <div class="form-floating">
-      <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-        <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-      <label for="floatingSelectGrid">Works with selects</label>
-    </div>
-  </div>
-</div>
-
--->
-
+</section>
 
 
   <!--SECTION FOR INDIVIDUAL SHOW INFO AND MY SAVED SHOWS -->
       <!--LEFT SECTION-->
-      <div class="row align-items-md-stretch" id="shows">
+      <section class="row align-items-md-stretch" id="shows">
         <div class="col-md-6">
           <div class="h-100 p-5 text-white bg-dark rounded-3">
             <h2>Change the background</h2>
@@ -116,67 +81,34 @@
             <button class="btn btn-outline-secondary" type="button">Example button</button>
           </div>
         </div>
-      </div>
+      </section>
 
 <!--SECTION FOR CALENDAR AND/OR MAP-->
 
 
 
 
-   <!--ABOUT US-->
-   
-  <section id="about-us">
-      <div class="flex-row"> 
-      <h2 class="section-title primary-border">About us</h2>
-     </div>
-  
-      <div class="developers">
-        <!--this is to wrap in flexbox container-->
-        <article class="developer">
-        <img src="/"  />
-        <h3 class="developer-name">Tanya Gonzalez</h3>
-        </div>
-      </article>
-  
-      <!-- second developer -->
-      <div class="developers">
-        <!--this is to wrap in flexbox container-->
-        <article class="developer">
-        <img src="/"  />
-        <h3 class="developer-name">Paul Nelson</h3>
-        </div>
-      </article>
-
-      <!-- third developer -->
-      <div class="developers">
-        <!--this is to wrap in flexbox container-->
-        <article class="developer">
-        <img src="/"  />
-        <h3 class="developer-name">Adam Vaughn</h3>
-        </div>
-      </article>
-
-       <!-- fourth developer-->
-       <div class="developers">
-        <!--this is to wrap in flexbox container-->
-        <article class="developer">
-        <img src="/"  />
-        <h3 class="developer-name">Jake George</h3>
-        </div>
-      </article>
-
-      </div>
-    </section>
+ 
   
     <!-- "reach out" section -->
-    <section id="contact-us">
-      <form input=""></form>
-        <h2>Contact us</h2> 
-    </div>   
+    <div class="container" ID="contact-us">
+      <form action="action_page.php">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+        
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
 
-  </section>
-
-
+</main>
 
 
 

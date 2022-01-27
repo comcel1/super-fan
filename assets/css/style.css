@@ -55,17 +55,56 @@ header img {
   width: 100%;
 }
 
+/* SEARCH BAR */
+
+/* Style the search box */
+
+
+
+
+
+
+
+
+
 /* CONTACT FORM */
-.contact {
-  background: var(--secondary-color);
+
+/* CONTACT US -TEXT-*/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
 }
 
-.contact h2 {
-  color: var(--primary-color);
+/* CONTACT US -BUTTON-*/
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* CONTAC US -CONTAINER- */
+.container {
+  border-radius: 5px;
+  background-color: #03989e;
+  padding: 20px;
+  width: 50%;
+  font-size: 1.5rem;
 }
 
 
-
+/* CONTACT US HOVER */
+input[type=submit]:hover {
+  background-color: #0c2450;
+}
 
   /* NAVBAR HOVER */
   .navbar-links li:hover {
