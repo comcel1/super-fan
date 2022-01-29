@@ -203,3 +203,8 @@ input[type=submit]:hover {
       display: flex;
     }
   }
+
+
+  footer {
+        text-align: center;
+  }
