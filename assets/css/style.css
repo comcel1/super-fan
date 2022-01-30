@@ -8,7 +8,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #03989e;
+    background-color: #ffff;
     font-family: 'Oswald', sans-serif;
   }
 
@@ -16,12 +16,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     background-color: white;
   }
 
   .brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
+    font-size: 3rem;
+    margin:1.5rem;
+    text-align: center;
+    align-items: center;
   }
 
 
@@ -37,8 +40,9 @@
 
   .navbar-links li a {
     text-decoration: none;
+    font-size: 1.5rem;
     color:black;
-    padding: 1rem;
+    padding: 1.5rem;
     display: block;
   }
 
@@ -47,18 +51,122 @@
 
 }
 
+header img {
+  width: 100%;
+  height: 50%;
+}
+
+/* SEARCH BAR */
+
+/* Style the search box */
+
+.wrapper {
+  width: 200%;
+  max-width: 70%;
+  margin: 6rem auto;
+}
+
+.label {
+  font-size: .625rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: +1.3px;
+  margin-bottom: 1rem;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+/* ABOUT US SECTION */
+.about-us {
+  text-align: center;
+}
+
+.developers {
+  background-color: #03989e;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+}
+
+.developers article img {
+  border-radius: 15%;
+  border-color: white;
+  border-style: solid;
+}
 
 
 
+/* CONTACT FORM */
+
+/* CONTACT US -TEXT-*/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+/* CONTACT US -BUTTON-*/
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* CONTAC US -CONTAINER- */
+.container {
+  border-radius: 5px;
+  background-color: #03989e;
+  padding: 20px;
+  width: 50%;
+  font-size: 1.5rem;
+}
 
 
-
-
-
+/* CONTACT US HOVER */
+input[type=submit]:hover {
+  background-color: #0c2450;
+}
 
   /* NAVBAR HOVER */
   .navbar-links li:hover {
-    background-color: red;
+    background-color: #03989e;
   }
   .toggle-button {
     position: absolute;
@@ -74,7 +182,7 @@
   .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: red;
+    background-color: #03989e;
     border-radius: 10px;
   }
 
@@ -110,3 +218,11 @@
       display: flex;
     }
   }
+
+
+  footer {
+        text-align: center;
+  }
+
+
+  
