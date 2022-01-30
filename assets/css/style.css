@@ -104,9 +104,23 @@ header img {
   cursor: pointer;
 }
 
+/* ABOUT US SECTION */
+.about-us {
+  text-align: center;
+}
 
+.developers {
+  background-color: #03989e;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+}
 
-
+.developers article img {
+  border-radius: 15%;
+  border-color: white;
+  border-style: solid;
+}
 
 
 
@@ -208,3 +222,6 @@ input[type=submit]:hover {
   footer {
         text-align: center;
   }
+
+
+  
