@@ -18,6 +18,8 @@
     align-items: center;
     text-align: center;
     background-color: white;
+    font-size: medium;
+    
   }
 
   .brand-title {
@@ -51,10 +53,11 @@
 
 }
 
-header img {
+header img, section img {
   width: 100%;
   height: 50%;
 }
+
 
 /* SEARCH BAR */
 
@@ -158,6 +161,25 @@ input[type=submit] {
   font-size: 1.5rem;
 }
 
+
+.about-us-img {
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  clear: both;
+}
+
+.button {
+  background-color: #1F7F4C;
+  font-size: 18px; 
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px 20px;
+  color: #ffffff;
+  border-radius: 5px;
+  display: inline-block;
+}
 
 /* CONTACT US HOVER */
 input[type=submit]:hover {
