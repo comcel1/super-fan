@@ -1,5 +1,5 @@
   
-  /*new code */
+  /*Style for SUPER FAN */
   
   * {
     box-sizing:border-box;
@@ -10,8 +10,8 @@
     padding: 0;
     background-color: #ffff;
     font-family: 'Oswald', sans-serif;
-  }
 
+  }/* NAVBAR SECTION */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,14 +21,6 @@
     font-size: medium;
     
   }
-
-  .brand-title {
-    font-size: 3rem;
-    margin:1.5rem;
-    text-align: center;
-    align-items: center;
-  }
-
 
   .navbar-links ul {
     margin: 0;
@@ -53,6 +45,42 @@
 
 }
 
+/* NAVBAR HOVER */
+.navbar-links li:hover {
+  background-color: #03989e;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #03989e;
+  border-radius: 10px;
+}
+
+  /* BRAND */
+  .brand-title {
+    font-size: 3rem;
+    margin:1.5rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+
 header img, section img {
   width: 100%;
   height: 50%;
@@ -61,15 +89,6 @@ header img, section img {
 }
 
 
-/* SEARCH BAR */
-
-/* Style the search box */
-
-.wrapper {
-  width: 200%;
-  max-width: 70%;
-  margin: 6rem auto;
-}
 
 .label {
   font-size: .625rem;
@@ -79,40 +98,10 @@ header img, section img {
   margin-bottom: 1rem;
 }
 
-.searchBar {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#searchQueryInput {
-  width: 100%;
-  height: 2.8rem;
-  background: #f5f5f5;
-  outline: none;
-  border: none;
-  border-radius: 1.625rem;
-  padding: 0 3.5rem 0 1.5rem;
-  font-size: 1rem;
-}
-
-#searchQuerySubmit {
-  width: 3.5rem;
-  height: 2.8rem;
-  margin-left: -3.5rem;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-#searchQuerySubmit:hover {
-  cursor: pointer;
-}
-
 /* ABOUT US SECTION */
 .about-us {
   text-align: center;
+  
 }
 
 .developers {
@@ -120,6 +109,8 @@ header img, section img {
   display: flex;
   justify-content: space-evenly;
   padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .developers article img {
@@ -129,10 +120,33 @@ header img, section img {
 }
 
 
+.about-us-img {
+  width: 250px;
+  height: 250px;
+  
+}
+
+.button {
+  background-color: #04AA6D;
+  font-size: 18px; 
+  font-family: Helvetica, Arial, sans-serif; 
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px 20px;
+  color: #ffffff;
+  border-radius: 5px;
+  display: inline-block;
+  
+}
+
+/* CONTACT US HOVER */
+input[type=submit]:hover , .button:hover{
+  background-color: #0c2450;
+}
+
 
 /* CONTACT FORM */
 
-/* CONTACT US -TEXT-*/
 input[type=text], select, textarea {
   width: 100%; 
   padding: 12px; 
@@ -163,54 +177,12 @@ input[type=submit] {
   font-size: 1.5rem;
   padding-bottom: 15px;
   margin-bottom: 15px;
+
 }
 
 
-.about-us-img {
-  width: 250px;
-  height: 250px;
-  justify-content: center;
-  clear: both;
-}
 
-.button {
-  background-color: #1F7F4C;
-  font-size: 18px; 
-  font-family: Helvetica, Arial, sans-serif; 
-  font-weight: bold;
-  text-decoration: none;
-  padding: 14px 20px;
-  color: #ffffff;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-/* CONTACT US HOVER */
-input[type=submit]:hover {
-  background-color: #0c2450;
-}
-
-  /* NAVBAR HOVER */
-  .navbar-links li:hover {
-    background-color: #03989e;
-  }
-  .toggle-button {
-    position: absolute;
-    top: .7rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-  }
-
-  .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #03989e;
-    border-radius: 10px;
-  }
+  
 
   @media (max-width: 600px) {
     .toggle-button {
