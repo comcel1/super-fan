@@ -60,10 +60,10 @@
       <section class="row align-items-md-stretch" id="music">
         <div class="col-md-8">
           <div class="h-100 p-5 text-white bg-dark rounded-3">
-            <h2>Artist Search</h2>
+            <h2>Artist Discography</h2>
                 <input type="text" id="artist" autofocus />
                 <button type="button" class="btn btn-info button" id="searching">Search</button>
-                <div id="result" class="column"></div>
+                <div id="result" class="row"></div>
           </div>
         </div>
         
@@ -76,13 +76,14 @@
             <button class="button" onClick="findLyrics()">Find Lyrics</button>
             <div id="output"></div>
             <script>
-                function findLyrics(){
-                    $.get("https://api.lyrics.ovh/v1/"+document.getElementById("group").value+"/"+document.getElementById("title").value, function(data){
-                        document.getElementById("output").innerHTML=data.lyrics.replace(new RegExp("\n","g"),"<br>").replace("Paroles de la chanson ", "").replace("par ", "by ")
-                    })
-                } 
-
-
+              document.getElementById("output").innerHTML = localStorage.getItem("lastSearch")
+              function findLyrics() {
+                $.get("https://api.lyrics.ovh/v1/" + document.getElementById("group").value + "/" + document.getElementById("title").value, function (data) {
+                 var formattedLyrics = data.lyrics.replace(new RegExp("\n", "g"), "<br>").replace("Paroles de la chanson ", "").replace("par ", "by ")
+                 document.getElementById("output").innerHTML = formattedLyrics
+                 localStorage.setItem("lastSearch", formattedLyrics)
+                })
+              }
             </script>
           </div>
         </div>
@@ -125,7 +126,8 @@
 
     <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- <script src="./assets/js/script.js"></script> -->
-    <script src="./trial.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/artist.js"></script>
   </body>
 </html>
 
