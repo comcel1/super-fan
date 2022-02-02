@@ -76,13 +76,14 @@
             <button class="button" onClick="findLyrics()">Find Lyrics</button>
             <div id="output"></div>
             <script>
-                function findLyrics(){
-                    $.get("https://api.lyrics.ovh/v1/"+document.getElementById("group").value+"/"+document.getElementById("title").value, function(data){
-                        document.getElementById("output").innerHTML=data.lyrics.replace(new RegExp("\n","g"),"<br>").replace("Paroles de la chanson ", "").replace("par ", "by ")
-                    })
-                } 
-
-
+              document.getElementById("output").innerHTML = localStorage.getItem("lastSearch")
+              function findLyrics() {
+                $.get("https://api.lyrics.ovh/v1/" + document.getElementById("group").value + "/" + document.getElementById("title").value, function (data) {
+                 var formattedLyrics = data.lyrics.replace(new RegExp("\n", "g"), "<br>").replace("Paroles de la chanson ", "").replace("par ", "by ")
+                 document.getElementById("output").innerHTML = formattedLyrics
+                 localStorage.setItem("lastSearch", formattedLyrics)
+                })
+              }
             </script>
           </div>
         </div>
