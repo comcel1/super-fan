@@ -1,48 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SUPER FAN</title>
 
-     <!-- Bootstrap core CSS -->
-     <link href="./assets/css/bootstrap.css" rel="stylesheet">
-     <link href="./assets/css/style.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SUPER FAN</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/css/bootstrap.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
 
 
-    <!--Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-    <script type="text/javascript" src="assets/js/calendar.js"></script>
+  <script type="text/javascript" src="assets/js/calendar.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  </head>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
 <body>
 
-<!--NAVBAR-->
+  <!--NAVBAR-->
 
-<nav class="navbar">
-      <div class="brand-title"> SUPER FAN</div>
+  <nav class="navbar">
+    <div class="brand-title"> SUPER FAN</div>
     <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </a>
     <div class="navbar-links">
-        <ul>
-            <li> <a href="#home">Home</a></li>
-            <li> <a href="#music">Music</a></li>
-            <li> <a href="./about-us.html">About us</a></li>
-            <li> <a href="#contact-us">Contact us</a></li>
-        </ul>
+      <ul>
+        <li> <a href="#home">Home</a></li>
+        <li> <a href="#music">Music</a></li>
+        <li> <a href="./about-us.html">About us</a></li>
+        <li> <a href="#contact-us">Contact us</a></li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
-<!--main section-->
+  <!--main section-->
 
   <!--header-->
 
@@ -50,99 +51,95 @@
     <img src="./assets/img/CONTACT US (1400 × 500 px).png" alt="SUPER FAN banner with logo">
   </header>
 
-  
+
 
   <div class="container" id="container">
     <form action="action_page.php">
-  
+
       <label for="fname">Artist/Band</label>
       <input type="text" id="fname" name="artist/band" placeholder="">
-  
+
       <label for="lname">Lyrics</label>
       <input type="text" id="lname" name="lyrics" placeholder="">
-              
+
       <input type="submit" value="Submit">
-  
+
     </form>
   </div>
 
 
 
   <!--SECTION FOR INDIVIDUAL Music INFO AND MY SAVED Music -->
-      <!--LEFT SECTION-->
-      <section class="row align-items-md-stretch" id="music">
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-white bg-dark rounded-3">
-            <h2>Change the background</h2>
-            <p>Swap the background-color utility and add a color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-            <button class="btn btn-outline-light" type="button">Example button</button>
-          </div>
-        </div>
-        <!--RIGHT SECTION-->
-        <div class="col-md-6">
-          <div class="flex h-100 p-5 bg-light border rounded-3">
-            <p>Song: <input type="text" id="title"></p>
-            <p>Artist: <input type="text" id="artist"></p>
-            <button onClick="findLyrics()">Find Lyrics</button>
-            <div id="output"></div>
-            <script>
-                function findLyrics(){
-                    $.get("https://api.lyrics.ovh/v1/"+document.getElementById("artist").value+"/"+document.getElementById("title").value, function(data){
-                        document.getElementById("output").innerHTML=data.lyrics.replace(new RegExp("\n","g"),"<br>").replace("Paroles de la chanson ", "").replace("par ", "by ")
-                    })
-                } 
-            </script>
-          </div>
-        </div>
-      </section>
-
-<!--SECTION FOR CALENDAR AND/OR MAP-->
-
-
-
-
- 
-  
-
-<!--CONTACT US-->
-<section>
-  <img src="./assets/img/CONTACT US (1400 × 500 px) (2).png" alt="contact us banner">
-</section>
-    <div class="container" ID="contact-us">
-      <form action="action_page.php">
-    
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name...">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-        
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
-    
-      </form>
+  <!--LEFT SECTION-->
+  <section class="row align-items-md-stretch" id="music">
+    <div class="col-md-6">
+      <div class="h-100 p-5 text-white bg-dark rounded-3">
+        <h2>Change the background</h2>
+        <p>Swap the background-color utility and add a color utility to mix up the jumbotron look. Then, mix and match
+          with additional component themes and more.</p>
+        <button class="btn btn-outline-light" type="button">Example button</button>
+      </div>
     </div>
-
-
-
-
-    <!--FOOTER-->
-     
-      <footer class="pt-3 mt-4 text-muted border-top">
-        Made by Tanya Gonzalez, Paul Nelson, Adam Vaughn, and Jake George  &copy; 2022
-      </footer>
+    <!--RIGHT SECTION-->
+    <div class="col-md-6">
+      <div class="flex h-100 p-5 bg-light border rounded-3">
+        <p>Song: <input type="text" id="title"></p>
+        <p>Artist: <input type="text" id="artist"></p>
+        <button onClick="findLyrics()">Find Lyrics</button>
+        <div id="output"></div>
+        <script>
+          document.getElementById("output").innerHTML = localStorage.getItem("lastSearch")
+          function findLyrics() {
+            $.get("https://api.lyrics.ovh/v1/" + document.getElementById("artist").value + "/" + document.getElementById("title").value, function (data) {
+             var formattedLyrics = data.lyrics.replace(new RegExp("\n", "g"), "<br>").replace("Paroles de la chanson ", "").replace("par ", "by ")
+             document.getElementById("output").innerHTML = formattedLyrics
+             localStorage.setItem("lastSearch", formattedLyrics)
+            })
+          } 
+        </script>
+      </div>
     </div>
+  </section>
+
+
+  <!--CONTACT US-->
+  <section>
+    <img src="./assets/img/CONTACT US (1400 × 500 px) (1).png" alt="contact us banner">
+  </section>
+  <div class="container" ID="contact-us">
+    <form action="action_page.php">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
 
 
 
 
-    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
-      
-  </body>
+  <!--FOOTER-->
+
+  <footer class="pt-3 mt-4 text-muted border-top">
+    Made by Tanya Gonzalez, Paul Nelson, Adam Vaughn, and Jake George &copy; 2022
+  </footer>
+  </div>
+
+
+
+  <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
 </html>
-
-
-
