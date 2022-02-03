@@ -10,3 +10,13 @@ toggleButton.addEventListener('click', () => {
     console.log()
 })
 
+const clearEl = document.getElementById("clear-history");
+
+ // Clear History button
+ clearEl.addEventListener("click", function () {
+    document.getElementById("output").innerHTML = "";
+    window.location.replace('#music');
+    localStorage.clear();
+    searchHistory = [];
+    renderSearchHistory();
+})

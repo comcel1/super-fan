@@ -73,7 +73,7 @@
             <h1>Lyrics</h1>
             <p>Song: <input type="text" id="title"></p>
             <p>Artist: <input type="text" id="group"></p>
-            <button class="button" onClick="findLyrics()">Find Lyrics</button>
+            <button id ="searching" class="button" onClick="findLyrics()">Find Lyrics</button>
             <div id="output"></div>
             <script>
               document.getElementById("output").innerHTML = localStorage.getItem("lastSearch")
@@ -85,6 +85,7 @@
                 })
               }
             </script>
+            <button id="clear-history" class="button">Clear Lyrics</button>
           </div>
         </div>
       </section>
